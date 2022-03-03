@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Table(name = "PRODUCT-TBL") // If you dont create a table, java will write for you with class name.
+@Table(name = "PRODUCT_TBL") // If you dont create a table, java will write for you with class name.
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

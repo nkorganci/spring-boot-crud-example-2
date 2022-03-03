@@ -32,8 +32,18 @@ public class ProductController {
     public Product findProductById(@PathVariable int id){
         return productService.getProductById(id);
     }
-    @GetMapping()
-    public Product findProductByName(String name){
+    @GetMapping("/product/{name}")
+    public Product findProductByName(@PathVariable String name){
         return productService.getProductByName(name);
     }
+
+    @PutMapping("/update")
+    public Product updateProduct(@RequestBody Product product){
+        return productService.updateProduct(product);
+    }
+    @DeleteMapping("/delete/{id}")
+    public String deleteProduct(@PathVariable int id){
+        return productService.deleteProduct(id);
+    }
+
 }
