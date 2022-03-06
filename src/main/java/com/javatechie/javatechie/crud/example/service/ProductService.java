@@ -24,13 +24,7 @@ public class ProductService {
     }
 
     //3 GET
-    public List<Product> getProducts(){
-        return productRepository.findAll();
-    }
 
-    public Product getProduct(){
-        return productRepository.fi
-    }
 
 
 }
